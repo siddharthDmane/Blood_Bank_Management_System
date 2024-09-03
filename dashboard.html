@@ -1,0 +1,162 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="bcss/dash.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<script src="//code.tidio.co/tamwm8zhsfsutef7yitqafcqllts2pyy.js" async></script>
+
+<body>
+	<div id="upper"> Blood Donation Dashboard</div>
+	<div id="leftbar">
+		<table style="margin-top:25px;">
+			<tr><th align='left' style="padding-left:10px;padding-top: 8px;" id="donor">Donor</th></tr>
+			<tr><th align='left' style="padding-left:10px;padding-top: 8px;" id="donations">Donations</th></tr>
+			<tr><th align='left' style="padding-left:10px;padding-top: 8px;" id="patinet">Patient</th></tr>
+			<tr><th align='left' style="padding-left:10px;padding-top: 8px;" id="request">Blood Request</th></tr>
+			<tr><th align='left' style="padding-left:10px;padding-top: 8px;" id="stocks">BLood Stocks</th></tr>
+			<tr><th align='left' style="padding-left:10px;padding-top: 8px;" id="admin">Admin</th></tr>			
+		</table>
+	</div>
+
+<div id="entire">
+	<div id="dashboard">
+		<div id="dashup">
+			<div id="A+" class="cards">
+			<table style="margin:20px 25px 10px 28px;">
+				<tr><th id="a+"> A+ </th></tr>
+				<tr><th id="ap_stocks" style="text-align:'right';">0</th></tr>
+			</table>
+			</div>
+
+
+			<div id="B+" class="cards">
+			<table style="margin:20px 25px 10px 28px;">
+				<tr><th id="b+"> B+ </th></tr>
+				<tr><th id="bp_stocks" style="text-align:'right';">0</th></tr>
+			</table>
+			</div>
+
+			<div id="AB+" class="cards">
+			<table style="margin:20px 25px 10px 28px;">
+				<tr><th id="ab+"> AB+ </th></tr>
+				<tr><th id="abp_stocks" style="text-align:'right';">0</th></tr>
+			</table>
+			</div>
+
+			<div id="O+" class="cards">
+			<table style="margin:20px 25px 10px 28px;">
+				<tr><th id="o+"> O+ </th></tr>
+				<tr><th id="op_stocks" style="text-align:'right';">0</th></tr>
+			</table>
+			</div>
+		</div>
+		<div id="dashdown">
+			<div id="A-" class="cards">
+			<table style="margin:20px 25px 10px 28px;">
+				<tr><th id="a-"> A- </th></tr>
+				<tr><th id="an_stocks" style="text-align:'right';"> 0 </th></tr>
+			</table>
+			</div>
+
+			<div id="B-" class="cards">
+			<table style="margin:20px 25px 10px 28px;">
+				<tr><th id="b-"> B- </th></tr>
+				<tr><th id="bn_stocks" style="text-align:'right';"> 0 </th></tr>
+			</table>
+			</div>
+
+			<div id="AB-" class="cards">
+			<table style="margin:20px 25px 10px 28px;">
+				<tr><th id="ab-"> AB- </th></tr>
+				<tr><th id="abn_stocks" style="text-align:'right';"> 0 </th></tr>
+			</table>
+			</div>
+
+			<div id="O-" class="cards">
+			<table style="margin:20px 25px 10px 28px;">
+				<tr><th id="o-"> O- </th></tr>
+				<tr><th id="on_stocks" align="right"> 0 </th></tr>
+			</table>
+			</div>
+
+		</div>
+	</div>
+
+<div id="below">
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Img/i0.png" alt="img 0" width="1100" height="230">
+    </div>
+    <div class="carousel-item">
+      <img src="Img/i1.png" alt="img 1" width="1100" height="230">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<div id="addAdmin" style="display:none;">
+	<table  align="center" style="margin:30px auto 30px auto;width:50%;">
+		<tr>
+			<th> Choose Blood Group : </th>
+			<td>
+						<select id="bloodgroup">
+							<option value="none">select </option>
+							<option value="A+">A+</option>
+							<option value="B+">B+</option>
+							<option value="AB+">AB+</option>
+							<option value="O+">O+</option>
+							<option value="A-">A-</option>
+							<option value="B-">B-</option>
+							<option value="AB-">AB-</option>
+							<option value="O-">O-</option>						
+						</select>				
+			</td>
+		</tr>
+		<tr>
+			<th>Enter the Units : </th>
+			<td>
+				<input type="text" name="units" id="units">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input style="width:30%;" type="button" name="submitStocks" id="submitStocks" value="Update">
+			</td>
+		</tr>				
+	</table>
+</div>
+
+</div>
+</div>
+
+
+
+<script type="text/javascript" src="bjs/jquery.js"></script>
+<script type="text/javascript" src="bjs/dash.js"></script>
+
+</body>
+</html>

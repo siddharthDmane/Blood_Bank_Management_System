@@ -1,0 +1,45 @@
+#dash{
+	position: relative;
+	top:150px;
+	left:25%;
+	padding:50px;
+	width:50%;
+	background-color: azure;
+	border:1px solid skyblue;
+	box-shadow: 3px 3px grey;
+	z-index:1;
+}
+
+#dash-header{
+	position: absolute;
+	left:0px;
+	top:0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width:100%;
+	font-size:25px;
+	font-family: "Cambria";
+	background-color: lightsalmon;
+	border:1px salmon;
+}
+span{
+	margin:5px 5px 5px 70px;
+	font-size:25px;
+	font-family: "Cambria";
+}
+table{
+	margin-top:15px;
+	margin-right: auto;
+	margin-left: auto;
+	border:1px solid skyblue;
+}
+.ff{
+	font-size:20px;
+	font-family: "Cambria";
+}
+#otp-row{
+	display: none;
+}
+#verify-row{
+	display: none;
+}

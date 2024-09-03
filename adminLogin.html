@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Blood Bank Management System</title>
+  <link rel="stylesheet" type="text/css" href="bcss/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>		
+</head>
+
+<body>
+	<div id="header"> 
+		<img src="Img/logo.png" name="logo.png" id="logo">
+		<h1 id="htext">Blood Bank Management System</h1> 
+		<img src="Img/gov.jpg" name="gov.jpg" id="gov">
+	</div>
+
+	<div id="admin-dash">
+		<table cellspacing="3px" cellpadding="10px">
+			<tr><thead>
+				<th colspan="2" style="text-align: center;" class="ff">Admin Login Page</th>
+			</thead></tr>
+			<tbody>
+				<tr>
+					<th style="text-align:left;" class="ff"> Admin Email  </th>
+					<td> <input type="email" name="admin-id" id="admin-id" class="ff"> </td>
+				</tr>
+				<tr>
+					<th style="text-align: left;" class="ff"> Password </th>
+					<td> <input type="text" name="admin-pass" id="admin-pass" class="ff"> </td>
+				</tr>	
+				<tr>
+					<th colspan="2" style="text-align: center;">
+						 <input type="button" name="admin-login" id="admin-login" value="login" class="ff">
+					</th>
+				</tr>			
+			</tbody>
+		</table>
+	</div>
+<script type="text/javascript" src="bjs/jquery.js"></script>
+<script type="text/javascript" src="bjs/adminLogin.js"></script>
+</body>
+</html>

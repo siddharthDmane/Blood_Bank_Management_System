@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blood Bank Management System</title>
+  <link rel="stylesheet" type="text/css" href="bcss/index.css"> 
+  <link rel="stylesheet" type="text/css" href="bcss/donor_check.css"> 
+</head>
+
+<body>
+  <div id="header" style="z-index: 3;box-shadow: 3px 3px grey;"> 
+    <img src="Img/logo.png" name="logo.png" id="logo">
+    <h1 id="htext">Blood Bank Management System</h1> 
+    <img src="Img/gov.jpg" name="gov.jpg" id="gov">
+  </div>
+
+  <div id="dash">
+    <div id="dash-header"> <span >Donor Details <span></div>
+
+    <table cellspacing="10px">
+      <tr>
+      <th>
+      <input type="text" name="dname" id="dname" placeholder="Enter your name" class="ff" required>
+      </th>
+      </tr>
+      <tr>
+        <th>
+          <input type="email" name="dmail" id="dmail" placeholder="Enter email" class="ff" required>
+        </th>
+      </tr>
+      <tr id="otp-row">
+        <th>
+          <input type="text" name="eotp" id="eotp" placeholder="Enter OTP" class="ff">
+        </th>
+      </tr>      
+      <tr id="sotp">
+        <th>
+          <input type="button" name="dcheck" id="dcheck" value="Send OTP" class="ff">
+        </th>
+      </tr>     
+        <th id="verify-row">
+          <input type="button" name="dcheck" id="dverify" value="VERIFY" class="ff">
+        </th>
+      </tr>              
+    </table>
+  </div>
+
+<script type="text/javascript" src="bjs/jquery.js"></script>
+<script type="text/javascript" src="bjs/donor_check.js"></script>
+  
+</body>
+</html>

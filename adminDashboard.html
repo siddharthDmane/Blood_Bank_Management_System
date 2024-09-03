@@ -1,0 +1,124 @@
+<html>
+<head>
+  <title>Blood Bank Management System</title>
+  <link rel="stylesheet" type="text/css" href="bcss/index.css">	
+<link rel="stylesheet" type="text/css" href="bcss/adminDashboard.css">	  
+</head>
+
+<body>
+	<div id="header" style="z-index: 10;"> 
+		<img src="Img/logo.png" name="logo.png" id="logo">
+		<h1 id="htext">Blood Bank Management System</h1> 
+		<img src="Img/gov.jpg" name="gov.jpg" id="gov">
+	</div>
+
+
+	<div id="aname-div"><span class="ff"> Admin : </span><input type="text" id="aname" disabled class="ff"></div>
+
+		<div id="aleft">
+			<table cellpadding="5px" id="options">
+				<tr><th class="ff" id="madmin"> Manage Admins </th></tr>
+				<tr><th class="ff" id="mdonor"> Manage Donors </th></tr>
+				<tr><th class="ff" id="mpatient"> Manage Patients </th></tr>
+				<tr><th class="ff" id="mcamp"> Manage Camps </th></tr>				
+			</table>
+		</div>
+
+		<div id="saline-div">
+			<img src="Img/saline.gif" id="saline" />
+		</div>
+
+<div id="aright">
+		<div id="dashup">
+			<div id="A+" class="cards">
+			<table style="margin:20px 25px 10px 28px; width: 80%;">
+				<tr><th id="a+" class="ff" align="left"> A+ </th></tr>
+				<tr><th id="ap_stocks"  class="ff" align="right">0</th></tr>
+			</table>
+			</div>
+
+
+			<div id="B+" class="cards">
+			<table style="margin:20px 25px 10px 28px; width: 80%;">
+				<tr><th id="b+" class="ff" align="left"> B+ </th></tr>
+				<tr><th id="bp_stocks"  class="ff" align="right">0</th></tr>
+			</table>
+			</div>
+
+			<div id="AB+" class="cards">
+			<table style="margin:20px 25px 10px 28px; width: 80%;">
+				<tr><th id="ab+" class="ff" align="left"> AB+ </th></tr>
+				<tr><th id="abp_stocks"  class="ff" align="right">0</th></tr>
+			</table>
+			</div>
+
+			<div id="O+" class="cards">
+			<table style="margin:20px 25px 10px 28px ;width: 80%; width: 80%;">
+				<tr><th id="o+" class="ff" align="left"> O+ </th></tr>
+				<tr><th id="op_stocks"  class="ff" align="right">0</th></tr>
+			</table>
+			</div>
+		</div>
+		<div id="dashdown">
+			<div id="A-" class="cards">
+			<table style="margin:20px 25px 10px 28px; width: 80%;">
+				<tr><th id="a-" class="ff" align="left"> A- </th></tr>
+				<tr><th id="an_stocks"  class="ff" align="right"> 0 </th></tr>
+			</table>
+			</div>
+
+			<div id="B-" class="cards">
+			<table style="margin:20px 25px 10px 28px; width: 80%;">
+				<tr><th id="b-" class="ff" align="left"> B- </th></tr>
+				<tr><th id="bn_stocks"  class="ff" align="right"> 0 </th></tr>
+			</table>
+			</div>
+
+			<div id="AB-" class="cards">
+			<table style="margin:20px 25px 10px 28px; width: 80%;">
+				<tr><th id="ab-" class="ff" align="left"> AB- </th></tr>
+				<tr><th id="abn_stocks"  class="ff" align="right"> 0 </th></tr>
+			</table>
+			</div>
+
+			<div id="O-" class="cards">
+			<table style="margin:20px 25px 10px 28px; width: 80%;" >
+				<tr><th id="o-" class="ff" align="left"> O- </th></tr>
+				<tr><th id="on_stocks"  class="ff" align="right"> 0 </th></tr>
+			</table>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="stockDash">
+		<div id="stock-name" class="ff"> Here you can Update the Stocks </div>
+		<table id="stock-table" cellspacing="5">
+			<tr><th class="ff" align="left"> Select Blood Group : </th>
+			    <th class="ff"  align="left"><select id="sbg" class="ff">
+			    	<option value="A+">A+</option>
+			    	<option value="B+">B+</option>
+			    	<option value="AB+">AB+</option>
+			    	<option value="O+">O+</option>
+			    	<option value="A-">A-</option>
+			    	<option value="B-">B-</option>
+			    	<option value="AB-">AB-</option>
+			    	<option value="O-">O-</option>
+			    </select></th></tr>
+			<tr>
+				<th class="ff" align="left">Enter the units : </th>
+				<th align="left"><input type="text" name="units" id="sunits" class="ff"></th>
+			</tr>
+			<tr style="padding-top: 5px;">
+				<td colspan="2"align="center">
+					<input type="button" id="ustocks" value="Update Stocks"  class="ff">
+				</td>
+			</tr>
+		</table>
+	</div>
+
+<script type="text/javascript" src="bjs/jquery.js"></script>
+<script type="text/javascript" src="bjs/adminDashboard1.js"></script>
+
+</body>
+</html>

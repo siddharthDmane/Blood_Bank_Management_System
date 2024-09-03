@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./donor.css">
+</head>
+<body>
+	<div id="form-body">
+		<div id="up-form">
+			<h1 align="center"> Donor Registration </h1>
+		</div>
+		<div id="middle-form">
+			<div id=m-f-t> Donor Info</div>
+			<table class="tabels">
+				<tr>
+					<th class="fonts">Name </th>
+					<td>
+						<input type="text" id="name" class="fonts">
+					</td>
+					<th class="fonts">Gender </th>
+					<td>
+						<select id="gender"  class="fonts">
+							<option value="M">Male</option>
+							<option value="F">Female</option>
+						</select>
+					</td>
+				</tr>	
+
+				<tr>
+					<th class="fonts">Age </th>
+					<td>
+						<input type="text" id="age" class="fonts">
+					</td>
+					<th class="fonts">Mobile No </th>
+					<td>
+						<input type="text" id="mobno" class="fonts">
+					</td>
+				</tr>	
+
+				<tr>
+					<th class="fonts">Blood Group </th>
+					<td>
+						<select id="bloodgroup"  class="fonts">
+							<option value="none">select </option>
+							<option value="A+">A+</option>
+							<option value="B+">B+</option>
+							<option value="AB+">AB+</option>
+							<option value="O+">O+</option>
+							<option value="A-">A-</option>
+							<option value="B-">B-</option>
+							<option value="AB-">AB-</option>
+							<option value="O-">O-</option>						
+						</select>
+					</td>
+					<th class="fonts">Address </th>
+					<td>
+						<input type="text" id="address" class="fonts">
+					</td>
+				</tr>	
+
+				<tr>
+					<th class="fonts">State </th>
+					<td>
+						<input type="text" id="state" class="fonts">
+					</td>
+					<th class="fonts">District </th>
+					<td>
+						<input type="text" id="district" class="fonts">
+					</td>
+				</tr>	
+
+				<tr>
+					<th class="fonts">Document </th>
+					<td>
+						<select id="document"  class="fonts">
+							<option value="none">Choose one</option>
+							<option value="adhar-card">Adhar Card</option>
+							<option value="pan-card">Pan Card</option>
+						</select>
+					</td>
+					<th class="fonts">Document ID </th>
+					<td>
+						<input type="text" id="docid" class="fonts">
+					</td>
+				</tr>																	
+			</table>
+		</div>
+		<div id="down-form">
+		<div id=d-f-t> Confirmation </div>			
+			<p align="center" class="fonts">
+				Wiling to Donate? 
+				<p align="center" class="fonts"> if so please select the tentative date.</p>
+			</p>
+			<table class="tabels"  style="margin-top: 8px;margin-bottom: 8px;">
+				<tr>
+					<th class="fonts">Blood Bank </th>
+					<td>
+						<input type="text" id="doc" value="Blood Bank" disable class="fonts">
+					</td>
+					<th class="fonts">Tettative Date </th>
+					<td>
+						<input type="date" id="tentativedate" class="fonts">
+					</td>
+				</tr>
+			</table>
+			<table class="tabels" style="margin-top: 8px;">
+				<tr>
+					<th>
+						<p>
+							<input type="checkbox" name="check">
+							I hereby accept terms & conditions of registering as blood donor.
+						</p>
+					</th>
+				</tr>
+				<tr>
+					<td align="center">
+						<input type="button" name="submit" value="submit"  class="fonts">
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<a href="dashboard.html"></a>
+</body>
+</html>

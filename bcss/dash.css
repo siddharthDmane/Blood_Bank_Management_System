@@ -1,0 +1,79 @@
+#upper{
+	background-color: red;
+	position: fixed;
+	top:3px;
+	left:5px;
+	height:55px;
+	width:99.20%;
+	text-align:center;
+	font-size:38px ;
+	font-family:'cambria bold';
+	padding-top: 5px;
+}
+#leftbar{
+	background-color: red;
+	position: fixed;
+	left:5px;
+	top:65px;
+	height:89%;
+	width:300px;
+	font-size:25px ;
+	font-family:'cambria';
+	padding-top: 5px;	
+}
+#entire{
+	background-color: white;
+	position:absolute;
+	display: block;
+	top:65px;
+	left:310px;
+	width:77%;
+	padding:15px;
+	border:1px solid #fd5c63;
+	border-radius:15px;
+}
+
+#dashboard{
+	background-color: #fd5c63;
+	border:1px solid black;
+	border-radius:15px;
+}
+
+#dashup{display:flex; padding-left:20px;}
+#dashdown{display:flex;padding-left:20px;}
+.cards{
+	margin:25px 25px 25px 25px;
+	background-color: white;
+	border:1px solid black;
+	border-radius:15px;
+	height:100px;
+	width:200px;
+	font-size:25px ;
+	font-family:'cambria';	
+}
+table{
+	width:100%;
+}
+#leftbar th:hover{
+	background-color:#FBCEB1;
+	border:1px solid red;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#below{
+	margin-top: 10px;
+	padding:5px 30px 5px 30px;
+	background-color: #fd5c63;
+	height:auto;
+	width:auto;
+	border:1px solid black;
+	border-radius:15px;	
+	font-size:18px;
+	font-family: "Cambria";
+}
+img{
+	border:1px solid black;
+	border-radius:15px;
+}
+

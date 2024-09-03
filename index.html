@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blood Bank Management System</title>
+  <link rel="stylesheet" type="text/css" href="bcss/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  	<style>
+		#notification{
+			position:fixed;
+			top:0px;
+			left:30%;
+			background-color: skyblue;
+			border:1px solid blue;
+			padding:5px;
+			width:700px;
+			z-index: 10;
+		}
+		#nup,#ndown{
+			margin:5px;
+			display: flex;
+		}
+		#allow,#deny{
+			font-family:"Cambria";
+			font-size: 18px;
+			background-color: skyblue;
+		}		
+	</style>
+
+</head>
+
+<body>
+	<div id="header"> 
+		<img src="Img/logo.png" name="logo.png" id="logo">
+		<h1 id="htext">Blood Bank Management System</h1> 
+		<img src="Img/gov.jpg" name="gov.jpg" id="gov">
+	</div>
+
+	<div id="sub-header">
+		<img src="Img/menu.png" name="menu.png" id="menu">
+	</div>
+
+	<div id="main-body">
+		<div id="uleft">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+ 			 <!-- Indicators -->
+ 				 <ul class="carousel-indicators">
+  					  <li data-target="#demo" data-slide-to="0" class="active"></li>
+  					  <li data-target="#demo" data-slide-to="1"></li>
+  					  <li data-target="#demo" data-slide-to="2"></li>
+  					  <li data-target="#demo" data-slide-to="3"></li>
+  					  <li data-target="#demo" data-slide-to="4"></li>
+ 				 </ul>  
+  			<!-- The slideshow -->
+ 				 <div class="carousel-inner">
+ 					<div class="carousel-item active">
+ 						 <img src="Img/i0.png" alt="img 0" width="550" height="270">
+  				    </div>
+  					<div class="carousel-item">
+     					<img src="Img/camp0.png" alt="img 1" width="550" height="270">
+    				</div>
+  					<div class="carousel-item">
+     					<img src="Img/camp1.jpg" alt="img 1" width="550" height="270">
+    				</div>
+  					<div class="carousel-item">
+     					<img src="Img/c0.jpg" alt="img 1" width="550" height="270">
+    				</div>
+  					<div class="carousel-item">
+     					<img src="Img/c1.jpg" alt="img 1" width="550" height="270">
+    				</div>    				    				    				
+				 </div>
+  			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+  			  <span class="carousel-control-prev-icon"></span>
+  			</a>
+ 			 <a class="carousel-control-next" href="#demo" data-slide="next">
+   				 <span class="carousel-control-next-icon"></span>
+ 			 </a>
+			</div>			
+		</div>
+
+
+		<div id="uright">
+			<table cellpadding="5" class="hand">
+				<tr><th><img src="Img/g.jpg"/ class="imgc"></th>
+				<th><a href="ablood.html" id="abg" class="ff0"> Available Blood Groups&nbsp;&nbsp;</a></th></tr>
+				<tr><th><img src="Img/s.jpg"/ class="imgc"></th>
+				<th><a href="sblood.html" id="sbg" class="ff0"> Search BLood Group&nbsp;&nbsp;</a></th></tr>
+				<tr><th><img src="Img/d.png"/ class="imgc"></th>
+				<th><a href="donor_check.html" id="dreg" class="ff0"> Donor Registration&nbsp;&nbsp;</a></th></tr>
+				<tr><th><img src="Img/sd.jpg"/ class="imgc"></th>
+				<th><a href="sdonor.html" id="sdonor" class="ff0"> Search Donor&nbsp;&nbsp;</a></th></tr>
+			</table>
+		</div>	
+	</div>
+
+	<div id="main-body-down">
+		<div id="dleft" cellspacing="1" cellpadding="1">
+			<table border="1" id="cbg">
+				<thead>
+					<tr>
+						<th class="ff0" class="ff0">Blood Type</th>
+						<th class="ff0" class="ff0">Donate Blood T0</th>
+						<th class="ff0" class="ff0">Receive Blood From</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="ff0" class="ff0">A+</th>
+						<th class="ff0" class="ff0">A+, AB+</th>
+						<th class="ff0" class="ff0">A+, A-, O+, O-</th>
+					</tr>
+					<tr>
+						<th class="ff0" class="ff0">B+</th>
+						<th class="ff0" class="ff0">B+, AB+</th>
+						<th class="ff0" class="ff0">B+, B-, O+, O-</th>
+					</tr>
+					<tr>
+						<th>O+</th>
+						<th>O+, A+, B+, AB+</th>
+						<th>O+, O-</th>
+					</tr>
+					<tr>
+						<th class="ff0" class="ff0">AB+</th>
+						<th class="ff0" class="ff0">AB+</th>
+						<th class="ff0" class="ff0">Everyone</th>
+					</tr>
+					<tr>
+						<th class="ff0" class="ff0">A-</th>
+						<th class="ff0" class="ff0">A+, A-, AB+, AB-</th>
+						<th class="ff0" class="ff0">A-, O-</th>
+					</tr>
+					<tr>
+						<th class="ff0" class="ff0">B-</th>
+						<th class="ff0" class="ff0">B+, B-, AB+, AB-</th>
+						<th class="ff0" class="ff0">B-, O-</th>
+					</tr>
+					<tr>
+						<th class="ff0" class="ff0">O-</th>
+						<th class="ff0" class="ff0">O-</th>
+						<th class="ff0" class="ff0">O-</th>
+					</tr>
+					<tr>
+						<th class="ff0" class="ff0">AB-</th>
+						<th class="ff0" class="ff0">AB+, AB-</th>
+						<th class="ff0" class="ff0">AB-, A-, B-, O-</th>
+					</tr>										
+				</tbody>
+			</table>
+		</div>
+
+		<div id="dright">
+
+		</div>
+	</div>
+
+	<div id="hollow">
+		<marquee> Blood Bank Management System</marquee>
+	</div>
+
+	<div id="menu-card">
+		<table class="hand1" style="width:100%;">
+			<tr><th><a href="index.html" id="home" class="ff0">Home</a></th></tr>
+			<tr><th><a href="ablood.html" id="dashboard" class="ff0">Dashboard</a></th></tr>
+			<tr><th><a href="adminLogin.html" id="admin" class="ff0">Admin</a></th></tr>
+			<tr><th><a href="donor_check.html" id="donor" class="ff0">Donor</a></th></tr>
+			<tr><th><a href="patientReg.html" id="requester" class="ff0">Requester</a></th></tr>
+		</table>
+	</div>
+	<div style="position:relative;top:825px">.</div>
+
+<div id="notification">
+	<div id="nup">
+		<img src="Img/n.png"/ height="70" width="70">
+		<h3 style="margin-top:10px;">&nbsp;We would like to send you Notifications.</h3>
+	</div>
+	<div id="ndown">
+		<button id="allow" style="margin-left: 350px;" onclick="addTrue()">Allow</button>
+		<button id="deny" style="margin-left: 10px;" onclick="addFalse()">Deny</button>
+	</div>
+</div>
+
+<script type="text/javascript" src="bjs/jquery.js"></script>
+<script type="text/javascript" src="bjs/index1.js"></script>
+
+<script>
+	function notifyTrue(){
+		if(localStorage.notify=='true'){
+			document.querySelector('#notification').style.display='none';
+		}
+		else{
+			setTimeout(function(){
+				document.querySelector('#notification').style.display='block';
+			},1000);			
+		}
+	}
+
+	notifyTrue();
+
+	function addTrue(){
+		localStorage.setItem('notify','true');
+		if(localStorage.getItem('notify','true')){
+			document.querySelector('#notification').style.display='none';
+			notifyOption();
+		}
+	};
+
+	function addFalse(){
+		localStorage.setItem('notify','false');	
+		if(localStorage.getItem('notify','false')){
+			document.querySelector('#notification').style.display='none';
+		}	
+	};
+
+function showNotification(){
+	var notificationbody=new Notification('New Notification from blood Bank',{
+		body:'Blood Bank'
+	});
+}
+
+function notifyOption(){
+	if(localStorage.notify=='true'){
+		if(Notification.permission=='granted'){
+			if(localStorage.notifyMessage===undefined){
+				localStorage.setItem('notifyMessage','true');
+				showNotification();
+			}
+		}
+		else if(Notification.permission!=='denied'){
+			Notification.requestPermission().then(permission=>{
+				if(permission=='granted'){
+					showNotification();
+				}
+			})
+		}
+	}
+}
+notifyOption();
+</script>
+
+</body>
+
+</html>

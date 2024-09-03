@@ -1,0 +1,78 @@
+#form-body{
+	position: relative;
+	padding: 15px;
+	border:1px solid grey;
+	border-radius: 15px;
+	opacity: 1;
+}
+
+#up-form{
+	position: relative;
+	background-color: snow;
+	margin-top:15px;
+	border:1px dashed black;
+	border-radius: 15px;
+	box-shadow: 8px 8px grey;
+}
+
+#middle-form{
+	position: relative;
+	background-color: snow;
+	margin-top:15px;
+	border:1px solid black;
+	border-radius: 15px;
+	box-shadow: 8px 8px grey;	
+}
+
+#down-form{
+	position: relative;
+	background-color:snow;
+	margin-top:15px;
+	border:1px solid black;
+	border-radius: 15px;
+	box-shadow: 8px 8px grey;	
+}
+
+.tabels{
+	margin-top:50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;	
+}
+
+#middle-form table{
+	padding: 8px;
+	border:1px solid black;
+	border-radius: 15px; 
+}
+
+.fonts{
+	font-family: 'cambria';
+	font-size: 20px;	
+}
+
+th{ text-align: left; }
+
+#m-f-t{
+	position: absolute;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: aliceblue;
+	font:'cambria' 18px;
+	border:1px solid black;
+	border-radius: 9px;
+}
+
+#d-f-t{
+	position: absolute;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: aliceblue;
+	font:'cambria' 18px;
+	border:1px solid black;
+	border-radius: 9px;
+}

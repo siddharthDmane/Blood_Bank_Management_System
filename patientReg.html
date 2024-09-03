@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blood Bank Management System</title>
+  <link rel="stylesheet" type="text/css" href="bcss/index.css">	
+  <link rel="stylesheet" type="text/css" href="bcss/index.css"> 
+  <link rel="stylesheet" type="text/css" href="bcss/donor_check.css"> 
+  <style>
+  	table{width:60%;}
+  	tr,input,select{width:100%}
+  </style>  
+</head>
+
+<body>
+	<div id="header" style="z-index:15;"> 
+		<img src="Img/logo.png" name="logo.png" id="logo">
+		<h1 id="htext">Blood Bank Management System</h1> 
+		<img src="Img/gov.jpg" name="gov.jpg" id="gov">
+	</div>
+
+  <div id="dash" style="top:105px;left:300px;z-index: 1;">
+    <div id="dash-header"> <span >Patient Details <span></div>
+
+    <table  cellspacing="10px">
+      <tr>
+      <th colspan="2">
+      <input type="text" name="dname" id="dname" placeholder="Enter your name" class="ff">
+      </th>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <input type="email" name="dmail" id="dmail" placeholder="Enter email" class="ff">
+        </th>
+      </tr> 
+     <tr>
+      	<th align="left">Select Gender : </th>
+        <th align="left">
+          <select name="dgender" id="dgender" class="ff">
+          	<option value="select-none" class="ff">select</option>
+          	<option value="M" class="ff">Male</option>
+          	<option value="F" class="ff">Female</option>
+          </select>
+        </th>
+      </tr>
+      <tr>  
+        <th colspan="2">
+          <input type="text" name="dage" id="dage" class="ff" placeholder="Enter your age">
+        </th>
+      </tr>            
+      <tr>
+      	<th align="left">Your Blood Group : </th>
+        <th align="left">
+          <select name="dbg" id="dbg" class="ff">
+			<option value="select-none" class="ff">Select</option>          	
+          	<option value="A+" class="ff">A+</option>
+          	<option value="B+" class="ff">B+</option>
+          	<option value="AB+" class="ff">AB+</option>
+          	<option value="O+" class="ff">O+</option>
+          	<option value="A-" class="ff">A-</option>
+          	<option value="B-" class="ff">B-</option>
+          	<option value="AB-" class="ff">AB-</option>
+          	<option value="O-" class="ff">O-</option>
+          </select>
+        </th>
+      </tr> 
+     <tr>
+        <th colspan="2">
+          <input type="text" name="dloc" id="dloc" placeholder="Enter Location" class="ff">
+        </th>
+      </tr>       
+      <tr>
+      	<th align="left">Select District : </th>
+        <th align="left">
+          <select name="ddis" id="ddis" class="ff">
+          	<option value="select-none" class="ff">Select</option>
+          	<option value="Pune" class="ff">Pune</option>
+          	<option value="Satara" class="ff">Satara</option>
+          	<option value="Akola" class="ff">Akola</option>
+          	<option value="Sangli" class="ff">Sangli</option>
+          	<option value="Parbhani" class="ff">Parbhani</option>
+          	<option value="Latur" class="ff">Katur</option>
+          	<option value="Wai" class="ff">Wai</option>
+          	<option value="Washim" class="ff">Washim</option>
+          </select>
+        </th>
+      </tr>                    
+      <tr>  
+        <th colspan="2">
+          <input type="button" name="dreg" id="dreg" value="REGISTER" class="ff" style="width:80%;margin-top:15px;margin-bottom:10px;">
+        </th>
+      </tr>
+    </table>
+  </div>
+
+<script type="text/javascript" src="bjs/jquery.js"></script>
+<script type="text/javascript" src="bjs/patientReg.js"></script>
+
+  
+</body>
+</html>

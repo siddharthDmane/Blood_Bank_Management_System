@@ -1,0 +1,213 @@
+#header{
+	position: fixed;
+	display: inline-flex;
+	background-color: azure;
+	padding:1px;
+	width:99%;
+	top:3px;
+	left:5px;
+	border:1px solid skyblue;
+	text-align: center
+}
+#htext{
+	margin-top:15px;
+	margin-left: 10%;
+	font-family: "Cambria";
+}
+#logo{
+	margin-top:2px;
+	margin-left:8%;
+	margin-bottom: 2px;
+	height:80px;
+	width:80px;
+}
+#gov{
+	margin-top:5px;
+	margin-left:20%;
+	margin-bottom: 2px;
+	height:80px;
+	width:80px;
+}
+#header h1{
+	margin-left: 18%;
+}
+#sub-header{
+	position:fixed;
+	top:97px;
+	left:5px;
+	background-color: skyblue;
+	width: 99%;
+	padding: 3px;
+	border:1px solid blue;
+}
+#menu{
+	margin-left: 95%;
+	height:50px;
+	width:50px;
+}
+#main-body{
+	position:absolute;
+	display: flex;
+	top:170px;
+	left:8px;
+	width:99%;
+	background-color:#E9967A;
+	padding:10px;
+	z-index: -1;
+}
+
+#main-body-down{
+	position:absolute;
+	display: flex;
+	top:470px;
+	left:8px;
+	width:99%;
+	background-color:#E9967A;
+	padding:10px;
+	z-index: -1;
+}
+
+#uleft{
+	margin-left:10px;
+	width:70%;
+	margin:0px 5px 0px 5px;
+	border:1px solid white;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+#dleft{
+	margin-left:10px;
+	width:70%;
+	padding-bottom: 5px;
+	margin:0px 5px 0px 5px;
+	background-color:#F8F8F8;
+	border:1px solid #F8F8F8;
+	border-radius: 15px;	
+}
+#dleft h2{
+	font-family: "cambria";
+	text-align: center;
+}
+#dleft table{
+	padding:3px;
+	font-size:18px;
+	font-family: "cambria";
+	margin:30px auto 15px auto;
+}
+
+#cbg th,td{
+	padding:0px 5px 0px 5px;
+}
+#cbg thead{
+	background-color: #FF3800;
+	border:2px solid #E9967A;
+	border-radius: 15px;
+}
+#demo{
+	background-color: yellow;
+	height:100%;
+	width: 100%;
+	border:1px solid yellow;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+#uright{
+	margin-left:10px;
+	width: 70%;
+	margin:0px 5px 0px 5px;
+	background-color:#F8F8F8;
+	border:1px solid #F8F8F8;
+	border-radius: 15px;	
+}
+#dright{
+	margin-left:10px;
+	width: 70%;
+	margin:0px 5px 0px 5px;
+	background-color:#F8F8F8;
+	border:1px solid #F8F8F8;
+	border-radius: 15px;	
+}
+.imgc{
+	height: 50px;
+	width:50px;
+}
+
+#uright table{
+	margin:15px auto 15px auto;
+	border:1px solid red;
+}
+#dright table{	
+	width: 90%;
+	margin:30px auto auto auto;
+	border:2px solid #E9967A;
+	border-radius:5px;	
+}
+#drtable thead{
+	background-color:#FF3800;
+}
+#drtable th,td{
+	padding:0px 5px 0px 5px;
+}
+.hand tr:hover{
+	background-color: #E9967A;
+}
+.hand1 tr:hover{
+	background-color:#5F9EA0;
+}
+th,td{
+	font-size: 18px;
+	font-family: "cambria";
+	margin-right:5px;
+}
+#menu-card{
+	display: none;
+	padding:8px;
+	background-color: skyblue;
+	position: fixed;
+	top:155px;
+	right:10px;
+	border:1px solid blue;
+}
+a{
+	text-decoration: none !important;
+	color:black;
+}
+#hollow{
+	position: absolute;
+	top:830px;
+	left:8px;
+	width:99%;
+	color:white;
+	background-color: skyblue;
+	border:1px solid blue;
+	margin-bottom: 100px;
+}
+marquee{
+	color:black;
+	font-size:20px;
+	font-family: "cambria";
+}
+#admin-dash{
+	position: absolute;
+	left:28%;
+	top:25%;
+	padding: 50px 50px 50px 50px;
+	background-color:azure; 
+	border:1px solid blue;
+	border-radius: 15px;
+}
+#admin-dash table{
+	border:1px solid black;
+	border-radius:15px;
+}
+.ff{
+	font-size: 25px;
+	font-family: "cambria";
+}
+.ff0{
+	font-size: 20px;
+	font-family: "cambria";
+}
+#admin-dash thead{
+	background-color: #E9967A;
+}
